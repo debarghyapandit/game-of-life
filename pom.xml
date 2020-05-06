@@ -72,31 +72,7 @@
                     </configuration>
                             <properties>
                             <pitest.skip>false</pitest.skip>
-                          </properties>
-                             <profiles>
-                            <profile>
-                              <id>skip-pitest-if-no-main-dir</id>
-                              <activation>
-                                <file>
-                                  <missing>src/main/java</missing>
-                                </file>
-                              </activation>
-                              <properties>
-                                <pitest.skip>true</pitest.skip>
-                              </properties>
-                            </profile>
-                            <profile>
-                              <id>skip-pitest-if-no-test-dir</id>
-                              <activation>
-                                <file>
-                                  <missing>src/test/java</missing>
-                                </file>
-                              </activation>
-                              <properties>
-                                <pitest.skip>true</pitest.skip>
-                              </properties>
-                            </profile>
-                          </profiles>
+                          </properties>             
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
