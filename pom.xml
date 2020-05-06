@@ -69,10 +69,7 @@
                     <historyInputLocation>target/pitHistory.txt</historyInputLocation>
                     <historyOutputLocation>target/pitHistory.txt</historyOutputLocation>
                     <timestampedReports>false</timestampedReports>
-                    </configuration>
-                            <properties>
-                            <pitest.skip>false</pitest.skip>
-                          </properties>             
+                    </configuration>          
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
